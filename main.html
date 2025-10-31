@@ -1,119 +1,30 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Basic News Webpage</title>
-  <style>
-    /* Body styling */
-    body {
-      margin: 0;
-      font-family: Arial, sans-serif;
-      background-color: #f5f5f5;
-      color: #333;
-    }
-
-    /* Header styling */
-    .header {
-      background-color: #011e29;
-      color: white;
-      text-align: center;
-      padding: 20px 0;
-    }
-
-    .header h1 {
-      margin: 0;
-      font-size: 36px;
-    }
-
-    /* Latest News Section */
-    .latest-news-section {
-      background-color: #f0f8ff; /* Slightly different to highlight */
-      padding: 20px;
-      max-width: 800px;
-      margin: 20px auto;
-      border-radius: 10px;
-    }
-
-    .latest-news-section h2 {
-      margin-top: 0;
-      font-size: 24px;
-      color: #011e29;
-    }
-
-    .latest-news-section ul {
-      list-style-type: disc;
-      padding-left: 20px;
-    }
-
-    .latest-news-section li {
-      margin-bottom: 10px;
-      font-size: 16px;
-    }
-
-    /* Pictorial News Section */
-    .pictorial-news-section {
-      background-color: #fff;
-      padding: 20px;
-      max-width: 900px;
-      margin: 20px auto;
-      border-radius: 10px;
-      text-align: center;
-      box-shadow: 0 5px 15px rgba(0,0,0,0.1);
-    }
-
-    .pictorial-news-section h2 {
-      margin-top: 0;
-      font-size: 24px;
-      color: #011e29;
-    }
-
-    .pictorial-news-section img {
-      width: 280px;
-      height: 180px;
-      object-fit: cover;
-      margin: 10px;
-      border-radius: 8px;
-      box-shadow: 0 3px 8px rgba(0,0,0,0.2);
-    }
-
-    /* Responsive */
-    @media (max-width: 900px) {
-      .pictorial-news-section img {
-        width: 80%;
-        height: auto;
-        margin: 10px 0;
-      }
-    }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>News Webpage</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Link to your CSS file -->
 </head>
 <body>
+    <header class="header">
+        <h1>Daily News Portal</h1>
+    </header>
 
-  <!-- Header -->
-  <header class="header">
-    <h1>Daily News Portal</h1>
-  </header>
+    <div class="latest-news-section">
+        <h2>Latest News</h2>
+        <ul>
+            <li>Government announces new economic reforms.</li>
+            <li>Major breakthrough in renewable energy research.</li>
+            <li>Sports events resume with safety guidelines.</li>
+        </ul>
+    </div>
 
-  <!-- Latest News Section -->
-  <!-- Latest News Section -->
-<div class="latest-news-section">
-  <h2>Latest News</h2>
-  <h3>Top Stories</h3> <!-- Added h3 to satisfy the test -->
-  <ul>
-    <li>Government announces new economic reforms.</li>
-    <li>Major breakthrough in renewable energy research.</li>
-    <li>Sports events resume with safety guidelines.</li>
-  </ul>
-</div>
-
-
-  <!-- Pictorial News Section -->
-  <div class="pictorial-news-section">
-    <h2>Pictorial News</h2>
-    <img src="https://images.hindustantimes.com/img/2023/01/29/550x309/delhi_rains_1674974112847_1674981888135_1674981888135.jpeg" alt="Image One">
-    <img src="https://images.hindustantimes.com/img/2023/01/29/550x309/ADANI-INDIA-GAUTAM-ADANI-0_1675011651023_1675011651023_1675011672003_1675011672003.JPG" alt="Image Two">
-    <img src="https://images.hindustantimes.com/img/2023/01/29/550x309/FRANCE-REFORM-PENSIONS-31_1675022359706_1675022359706_1675022383851_1675022383851.JPG" alt="Image Three">
-  </div>
-
+    <div class="pictorial-news-section">
+        <h2>Pictorial News</h2>
+        <img src="image_url_1" alt="Image One">
+        <img src="image_url_2" alt="Image Two">
+        <img src="image_url_3" alt="Image Three">
+    </div>
 </body>
 </html>
