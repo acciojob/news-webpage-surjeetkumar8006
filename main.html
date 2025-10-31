@@ -4,39 +4,100 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>News Webpage</title>
-    <link rel="stylesheet" href="styles.css">
+    <style>
+        /* CSS styles will go here */
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #f5f5f5;
+            color: #333;
+        }
+
+        .header {
+            background-color: #011e29;
+            color: white;
+            text-align: center;
+            padding: 20px 0;
+        }
+
+        .latest-news-section {
+            background-color: #f0f8ff; /* Slightly different to highlight */
+            padding: 20px;
+            max-width: 800px;
+            margin: 20px auto;
+            border-radius: 10px;
+        }
+
+        .latest-news-section h2 {
+            margin-top: 0;
+            font-size: 24px;
+            color: #011e29;
+        }
+
+        .latest-news-section ul {
+            list-style-type: disc;
+            padding-left: 20px;
+        }
+
+        .latest-news-section li {
+            margin-bottom: 10px;
+            font-size: 16px;
+        }
+
+        .pictorial-news-section {
+            background-color: #fff;
+            padding: 20px;
+            max-width: 900px;
+            margin: 20px auto;
+            border-radius: 10px;
+            text-align: center;
+        }
+
+        .pictorial-news-section h2 {
+            margin-top: 0;
+            font-size: 24px;
+            color: #011e29;
+        }
+
+        .pictorial-news-section img {
+            width: 280px;
+            height: 180px;
+            object-fit: cover;
+            margin: 10px;
+            border-radius: 8px;
+            box-shadow: 0 3px 8px rgba(0,0,0,0.2);
+        }
+
+        @media (max-width: 900px) {
+            .pictorial-news-section img {
+                width: 80%;
+                height: auto;
+                margin: 10px 0;
+            }
+        }
+    </style>
 </head>
 <body>
-    <header>
-        <h1>Shaw's News</h1>
+
+    <header class="header">
+        <h1>Daily News Portal</h1>
     </header>
 
-    <div class="news-container">
-        <div class="latest-news">
-            <h2>Latest News Articles</h2>
-            <ul>
-                <li>Article 1</li>
-                <li>Article 2</li>
-                <li>Article 3</li>
-            </ul>
-        </div>
-
-        <div class="main-article">
-            <h2>Main Article</h2>
-            <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                Sed auctor, magna eu fringilla malesuada, ipsum risus eleifend est,
-                non feugiat quam augue euismod eros. Sed malesuada, magna eu fringilla
-                malesuada, ipsum risus eleifend est, non feugiat quam augue euismod eros.
-            </p>
-        </div>
-
-        <div class="pictorial-news">
-            <h2>Pictorial News</h2>
-            <img src="https://images.hindustantimes.com/img/2023/01/29/550x309/delhi_rains_1674974112847_1674981888135_1674981888135.jpeg" alt="News Image 1">
-            <img src="https://images.hindustantimes.com/img/2023/01/29/550x309/ADANI-INDIA-GAUTAM-ADANI-0_1675011651023_1675011651023_1675011672003_1675011672003.JPG" alt="News Image 2">
-            <img src="https://images.hindustantimes.com/img/2023/01/29/550x309/FRANCE-REFORM-PENSIONS-31_1675022359706_1675022359706_1675022383851_1675022383851.JPG" alt="News Image 3">
-        </div>
+    <div class="latest-news-section">
+        <h2>Latest News</h2>
+        <ul>
+            <li>Government announces new economic reforms.</li>
+            <li>Major breakthrough in renewable energy research.</li>
+            <li>Sports events resume with safety guidelines.</li>
+        </ul>
     </div>
+
+    <div class="pictorial-news-section">
+        <h2>Pictorial News</h2>
+        <img src="https://images.hindustantimes.com/img/2023/01/29/550x309/delhi_rains_1674974112847_1674981888135_1674981888135.jpeg" alt="Image One">
+        <img src="https://images.hindustantimes.com/img/2023/01/29/550x309/ADANI-INDIA-GAUTAM-ADANI-0_1675011651023_1675011651023_1675011672003_1675011672003.JPG" alt="Image Two">
+        <img src="https://images.hindustantimes.com/img/2023/01/29/550x309/FRANCE-REFORM-PENSIONS-31_1675022359706_1675022359706_1675022383851_1675022383851.JPG" alt="Image Three">
+    </div>
+
 </body>
 </html>
